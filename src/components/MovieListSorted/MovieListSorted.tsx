@@ -24,7 +24,7 @@ const MovieListSorted: React.FC<Props> = ({ movies }) => {
   ) : (
     <EmptyState
       title="No Movies Found"
-      description="There were no movies that matches for you search.."
+      description="There were no movies that match your search"
       Icon={MovieIcon}
     />
   );

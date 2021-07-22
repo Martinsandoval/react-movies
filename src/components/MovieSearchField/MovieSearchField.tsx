@@ -30,9 +30,6 @@ const MovieSearchField: React.FC<Props> = ({ onSearch }) => {
           }}
         />
       </InputGroup>
-      {/* <Button variant="primary" className="search-btn">
-        Search
-      </Button> */}
     </Form>
   );
 };

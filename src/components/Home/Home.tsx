@@ -50,7 +50,6 @@ const Home: React.FC = () => {
   );
 
   function handleOnRatingChange(newRating: number) {
-    debugger;
     if (newRating === rating) {
       setDisabledRating(true);
       return;

@@ -8,6 +8,9 @@ interface Props {
    */
   handleOnChange: (newRating: number) => void;
 
+  /**
+   * Whether if the rating field is disabled or not.
+   */
   disabledRating: boolean;
 }
 

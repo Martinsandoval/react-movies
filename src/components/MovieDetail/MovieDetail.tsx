@@ -41,7 +41,7 @@ const MovieDetail: React.FC = () => {
             </Card.Text>
           </Card.Body>
           <Card.Footer className="movie-card-footer border">
-            <Badge pill variant="primary" className="">
+            <Badge pill variant="primary">
               Rating: {movie.vote_average}
             </Badge>
           </Card.Footer>
