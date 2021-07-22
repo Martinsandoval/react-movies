@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navbar {
+  display: grid !important;
+  background-color: #282c34;
+  justify-content: center !important;
+  border-bottom: 5px solid #363636;
+  padding: 25px 20px !important;
+}
+
+.nav-link {
+  font-family: monospace;
+  font-size: 24px;
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  background-color: rgb(167, 167, 167);
+}
+
+.nav-link.active {
+  font-weight: 600;
+  background-color: rgb(167, 167, 167);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.movie-list-header {
+  text-align: left;
+  padding: 50px 50px 0;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(5, 300px);
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 30px;
+  padding: 80px 50px;
+}
+
+.movie-rating {
+  position: absolute !important;
+  right: 50px;
+  padding-top: 20px;
+}
+
+.lines-clamp-6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lines-clamp-15 {
+  display: -webkit-box;
+  -webkit-line-clamp: 15;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.search-input.form-control {
+  margin-right: 10px;
+  width: 500px !important;
+  height: 50px;
+}
+.search-input > div {
+  text-align: center;
+}
+
+.icon {
+  width: 150px;
+  height: 150px;
+}
+
+.search-btn {
+  border-radius: 5px !important;
+}
+
+.input-group-text {
+  background-color: #fff !important;
+}
+
+.empty-state-icon {
+  margin-top: 100px;
+  width: 300px;
+  height: 300px;
+}
+
+.empty-state-icon > g > path {
+  fill: #b1b1b1;
+}
+
+.movie-detail-card {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid !important;
+  width: 1200px;
+  grid-template-areas:
+    "img body body"
+    "img body body"
+    "img footer footer";
+  padding: 50px 0;
+  align-items: end;
+}
+
+.movie-card-img {
+  grid-area: img;
+}
+
+.movie-card-body {
+  grid-area: body;
+}
+
+.movie-card-footer {
+  grid-area: footer;
+  background-color: #fff !important;
+  border: none !important;
+}
