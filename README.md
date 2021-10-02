@@ -1,4 +1,4 @@
-# Movies Store (React Challenge)
+# Movies Store
 
 ## _Martin Sandoval_
 
