@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MovieSearchField from "../MovieSearchField/MovieSearchField";
 import MovieRatingField from "../MovieRatingField/MovieRatingField";
-import MovieListSorted from "../MovieListSorted/MovieListSorted";
+import List from "../List/List";
 import { Movie } from "../../types/interfaces";
 import axios from "axios";
 import { useDebounce } from "react-use";
@@ -68,6 +68,9 @@ const Home: React.FC = () => {
   return (
     <>
       <header className="App-header">
+        <p className="h1 my-5 font-weight-bold text-break">
+          Movies Store
+        </p>
         <MovieSearchField onSearch={onSearch} />
       </header>
       {movies.length > 0 && (
@@ -76,7 +79,7 @@ const Home: React.FC = () => {
           handleOnChange={(newRating) => handleOnRatingChange(newRating)}
         />
       )}
-      <MovieListSorted movies={moviesSearched || movies} />
+      <List movies={moviesSearched || movies} />
     </>
   );
 };

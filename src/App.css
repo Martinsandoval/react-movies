@@ -10,7 +10,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 200px;
+  min-height: 264px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,8 +113,8 @@
 
 .empty-state-icon {
   margin-top: 100px;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .empty-state-icon > g > path {
@@ -146,4 +146,10 @@
   grid-area: footer;
   background-color: #fff !important;
   border: none !important;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 50px 60px;
 }

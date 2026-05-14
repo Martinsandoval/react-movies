@@ -3,13 +3,11 @@ import MovieDetail from "./components/MovieDetail/MovieDetail";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar />
         <Switch>
           <Route
             exact

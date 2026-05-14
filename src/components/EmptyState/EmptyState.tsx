@@ -20,10 +20,10 @@ const EmptyState: React.FC<Props> = ({ title, description, Icon }) => {
     <div>
       <Icon className="empty-state-icon" />
       <div>
-        <p className="text-muted h2 mt-5 font-weight-bold text-break">
+        <p className="text-muted h4 mt-5 font-weight-bold text-break">
           {title}
         </p>
-        <small className="text-muted text-break h4">{description}</small>
+        <small className="text-muted text-break h6">{description}</small>
       </div>
     </div>
   );

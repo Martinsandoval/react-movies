@@ -5,12 +5,12 @@ import { CinemaIcon } from "../../graphics/icons";
 const Navbar: React.FC = () => {
   return (
     <NavBarComponent bg="light" variant="light">
-      <Container>
-        <NavBarComponent.Brand>
-          <CinemaIcon className="icon" />
-          <h2 className="pt-5">Movie Store</h2>
-        </NavBarComponent.Brand>
-      </Container>
+      {/*<Container>*/}
+      {/*  <NavBarComponent.Brand>*/}
+      {/*    <CinemaIcon className="icon" />*/}
+      {/*    <h2 className="pt-5">Movie Store</h2>*/}
+      {/*  </NavBarComponent.Brand>*/}
+      {/*</Container>*/}
     </NavBarComponent>
   );
 };
