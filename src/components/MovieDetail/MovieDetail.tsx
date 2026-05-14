@@ -9,16 +9,11 @@ const MovieDetail: React.FC = () => {
   const [movie, setMovie] = useState<Movie | null>(null);
   let { id } = useParams();
 
-  async function fetchMovieById() {
-    const response = await axios.get(
-      `${API_BASE_URL}/movie/${id}?api_key=${API_KEY}`
-    );
-    return response.data;
-  }
-
   useEffect(() => {
-    fetchMovieById().then((movie) => setMovie(movie));
-  }, []);
+    axios
+      .get(`${API_BASE_URL}/movie/${id}?api_key=${API_KEY}`)
+      .then((response) => setMovie(response.data));
+  }, [id]);
 
   return (
     movie && (

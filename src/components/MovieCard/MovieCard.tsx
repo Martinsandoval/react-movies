@@ -1,7 +1,7 @@
 import React from "react";
 import { Movie } from "../../types/interfaces";
 import { Card, Badge } from "react-bootstrap";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { IMAGE_BASE_URL } from "../../constants";
 
 interface Props {
